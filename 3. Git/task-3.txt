@@ -1,0 +1,99 @@
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git init
+Initialized empty Git repository in /home/rahadian/Documents/zettacamp/3. Git/Task - 3/.git/
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git branch
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ echo "# git-task" >> README.md
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git add README.md
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git commit -m 'first commit'
+[master (root-commit) aa0bbcd] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git branch
+* master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git remote add origin https://github.com/zettacamp-adli-hardiyanto/git-task.git
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git push origin master
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/zettacamp-adli-hardiyanto/git-task.git/'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git remote -v
+origin	https://github.com/zettacamp-adli-hardiyanto/git-task.git (fetch)
+origin	https://github.com/zettacamp-adli-hardiyanto/git-task.git (push)
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git push origin master
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/zettacamp-adli-hardiyanto/git-task.git/'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git push origin master
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 229 bytes | 114.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/zettacamp-adli-hardiyanto/git-task.git
+ * [new branch]      master -> master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git checkout -b dev/adli
+Switched to a new branch 'dev/adli'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git push origin dev/adli
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'dev/adli' on GitHub by visiting:
+remote:      https://github.com/zettacamp-adli-hardiyanto/git-task/pull/new/dev/adli
+remote: 
+To https://github.com/zettacamp-adli-hardiyanto/git-task.git
+ * [new branch]      dev/adli -> dev/adli
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ touch index.html
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git branch
+* dev/adli
+  master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ touch readme.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ mkdir assets
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ cd assets
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3/assets$ touch style.css
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3/assets$ cd ..
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git commit -m '[Initialization] Creation of files'
+On branch dev/adli
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	assets/
+	index.html
+	readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git add .
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git commit -m '[Initialization] Creation of files'
+[dev/adli 281f2d4] [Initialization] Creation of files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 assets/style.css
+ create mode 100644 index.html
+ create mode 100644 readme.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git push origin dev/adli
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/zettacamp-adli-hardiyanto/git-task.git/'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ git push origin dev/adli
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 399 bytes | 133.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/zettacamp-adli-hardiyanto/git-task.git
+   aa0bbcd..281f2d4  dev/adli -> dev/adli
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3$ 
+
+

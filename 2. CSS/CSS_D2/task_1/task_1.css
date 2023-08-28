@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    color: antiquewhite;
+    padding: 20px 0;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title-left {
+    margin-right: 500px;
+}
+
+.container {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 800px;
+}
+
+.list {
+    top: 0;
+    position: sticky;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .first-row, .second-row, .third-row {
+    display: flex;
+    justify-content: center;
+} */
+
+/* .second-row {
+    margin: 1rem 0;
+} */
+
+.card {
+    width: 300px;
+    height: 250px;
+    margin: 10px 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.card-image {
+    height: 120px;
+    width: 120px;
+    margin: 5px auto;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-1 {
+    background-image: url('https://tuquh.co/cdn/shop/products/indomiegoreng_55a86658-ba2d-48ef-a2c6-d52bc53546de_430x430.jpg?v=1672196930');
+
+}
+
+.product-2 {
+    background-image: url('https://tuquh.co/cdn/shop/products/indomiesoto_258x222.png?v=1661909851');
+}
+
+.product-3 {
+    background-image: url('https://tuquh.co/cdn/shop/products/indomieayamgeprek_258x214.png?v=1661909478');
+}
+
+.product-4 {
+    background-image: url('https://jumbo.co.id/wp-content/uploads/2019/10/371_Indomie_Rebus_Ayam_Spesial_68gr.jpg');
+}
+
+.product-5 {
+    background-image: url('https://jumbo.co.id/wp-content/uploads/2020/02/indomie_indomie-rasa-soto-spesial_full02-600x600.jpg');
+}
+
+.product-6 {
+    background-image: url('https://tuquh.co/cdn/shop/products/023_258x258.jpg?v=1649744126');
+}
+
+.product-7 {
+    background-image: url('https://tuquh.co/cdn/shop/products/71399_362610217183225_24152401_n_258x258.jpg?v=1587858109');
+}
+
+.product-8 {
+    background-image: url('https://tuquh.co/cdn/shop/products/popmiegoreng_258x247.png?v=1659580198');
+}
+
+.product-9 {
+    background-image: url('https://tuquh.co/cdn/shop/products/Mie_20Sedap_20Rasa_20Goreng_258x258.jpg?v=1587858112');
+}
+
+.card h2 {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.card a {
+    width: 50px;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    margin: 10px auto;
+}

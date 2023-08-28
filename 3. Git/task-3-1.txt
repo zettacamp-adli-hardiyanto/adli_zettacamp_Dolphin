@@ -1,0 +1,86 @@
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git config user.email "adli.hardiyanto@zettacamp.pro"
+fatal: not in a git directory
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git init
+Initialized empty Git repository in /home/rahadian/Documents/zettacamp/3. Git/Task - 3 - 1/.git/
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git config user.email "adli.hardiyanto@zettacamp.pro"
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git config user.name "zettacamp-adli-hardiyanto"
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git config user.password "your password"
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git config user.password "AKU2023DAPETkerja@"
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git config --list
+user.name=adlihardiyanto
+user.email=testingerkamv2@gmail.com
+email.name=adlihardiyanto@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+user.email=adli.hardiyanto@zettacamp.pro
+user.name=zettacamp-adli-hardiyanto
+user.password=AKU2023DAPETkerja@
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ echo "# belajar-git-zetta-1" >> README.md
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git add README.md
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git commit -m "first commit"
+[master (root-commit) c300a3d] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git remote add origin https://github.com/zettacamp-adli-hardiyanto/belajar-git-zetta-1.git
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git push origin master
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/zettacamp-adli-hardiyanto/belajar-git-zetta-1.git/'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git push origin master
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 244 bytes | 122.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/zettacamp-adli-hardiyanto/belajar-git-zetta-1.git
+ * [new branch]      master -> master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git checkout -b dev/adli
+Switched to a new branch 'dev/adli'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git branch
+* dev/adli
+  master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git push origin dev/adli
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'dev/adli' on GitHub by visiting:
+remote:      https://github.com/zettacamp-adli-hardiyanto/belajar-git-zetta-1/pull/new/dev/adli
+remote: 
+To https://github.com/zettacamp-adli-hardiyanto/belajar-git-zetta-1.git
+ * [new branch]      dev/adli -> dev/adli
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ touch index.html
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ touch readme.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ mkdir assets
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ cd assets
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1/assets$ touch style.css
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1/assets$ cd ..
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git add .
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git branch
+* dev/adli
+  master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git commit -m '[Initialization] Creation of files'
+[dev/adli d7812a3] [Initialization] Creation of files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 assets/style.css
+ create mode 100644 index.html
+ create mode 100644 readme.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ git push origin dev/adli
+Username for 'https://github.com': zettacamp-adli-hardiyanto
+Password for 'https://zettacamp-adli-hardiyanto@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 402 bytes | 201.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/zettacamp-adli-hardiyanto/belajar-git-zetta-1.git
+   c300a3d..d7812a3  dev/adli -> dev/adli
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 3 - 1$ 
+
+

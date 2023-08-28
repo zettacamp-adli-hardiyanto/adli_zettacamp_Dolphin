@@ -1,0 +1,89 @@
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ touch Readme.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git add .
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git init
+Initialized empty Git repository in /home/rahadian/Documents/zettacamp/3. Git/Task - 2/.git/
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git add .
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git commit -m '[Initialization] First Commit'
+[master (root-commit) db9cac7] [Initialization] First Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Readme.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git log --oneline
+db9cac7 (HEAD -> master) [Initialization] First Commit
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch
+* master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch dev/adli
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch
+  dev/adli
+* master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git checkout dev/adli
+Switched to branch 'dev/adli'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch
+* dev/adli
+  master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git log --oneline
+db9cac7 (HEAD -> dev/adli, master) [Initialization] First Commit
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git checkout master
+Switched to branch 'master'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git checkout dev/adli
+Switched to branch 'dev/adli'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ touch Index.html
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ touch yourname.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ mkdir assets
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ cd assets
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2/assets$ touch style.css
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2/assets$ cd ..
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch
+* dev/adli
+  master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git add .
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git commit -m '[Initialization] Files & Directory Creation'
+[dev/adli 70dabea] [Initialization] Files & Directory Creation
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Index.html
+ create mode 100644 assets/style.css
+ create mode 100644 yourname.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git checkout master
+Switched to branch 'master'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch
+  dev/adli
+* master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git checkout -b bugfix/adli
+Switched to a new branch 'bugfix/adli'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch
+* bugfix/adli
+  dev/adli
+  master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ touch my_note.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git add .
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git commit -m 'Add file txt to branch bugfix/adli'
+[bugfix/adli 90a9f5e] Add file txt to branch bugfix/adli
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 my_note.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git checkout dev/adli
+Switched to branch 'dev/adli'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git checkout master
+Switched to branch 'master'
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git merge dev/adli
+Updating db9cac7..70dabea
+Fast-forward
+ Index.html       | 0
+ assets/style.css | 0
+ yourname.txt     | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Index.html
+ create mode 100644 assets/style.css
+ create mode 100644 yourname.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git branch
+  bugfix/adli
+  dev/adli
+* master
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ git merge bugfix/adli
+Merge made by the 'recursive' strategy.
+ my_note.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 my_note.txt
+rahadian@rahadian-X456UR:~/Documents/zettacamp/3. Git/Task - 2$ ls
+assets  Index.html  my_note.txt  Readme.txt  yourname.txt
+

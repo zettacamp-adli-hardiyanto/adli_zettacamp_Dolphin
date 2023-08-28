@@ -1,0 +1,27 @@
+.main-container {
+    display: flex; 
+    width: 100%; 
+    justify-content: space-around; 
+    margin-top: 50px;text-align: center;
+}
+
+.container-1, .container-2 {
+    width: 40%; 
+    border: 1px solid black; 
+    height: 400px;
+}
+
+.container-1 ul {
+    overflow-y: scroll;
+    text-align: left;
+    height: 300px;
+    list-style-type: none;
+}
+
+.container-2 ul {
+    overflow-y: scroll;
+    text-align: left;
+    height: 300px;
+    list-style-type: none;
+}
+

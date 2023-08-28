@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+body {
+    background: black;
+    text-align: center;
+}
+
+#title {
+    padding: 20px;
+}
+
+#desc {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: blue;
+    width: 300px;
+    height: 500px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 10px solid black;
+}
+
+.card-image {
+    background: aqua;
+    height: 280px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.car-1 {
+    background-image: url('https://multidayaintegra.com/wp-content/uploads/2018/08/syncing-document-4157_bf6a2cf1-26c8-4688-ab14-85836d2a0562.svg');
+}
+
+.car-2 {
+    background-image: url('https://multidayaintegra.com/wp-content/uploads/2018/08/ssd-storage-1951_0cd86b60-9df8-4053-9198-84f76027d5de.svg');
+}
+
+.car-3 {
+    background-image: url('https://multidayaintegra.com/wp-content/uploads/2018/08/private-folder-4136_9a670d06-eeb7-4508-8533-143953499f9e.svg');
+}
+
+.car-4 {
+    background-image: url('https://multidayaintegra.com/wp-content/uploads/2018/09/lifebelt-3318_6c405c0e-728d-43f8-be45-014b6eca22b2.svg');
+}
+
+.card h2 {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    margin: 20px 20px;
+}
